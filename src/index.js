@@ -73,10 +73,6 @@ const inventory = [
 //✅ Review objects?
 
 //✅ 1. Create hello world using REGULAR functions
-
-// function helloWorld(name){
-//   return "Hello, World " + name
-// }
 // running `helloWorld()` invokes the function thus running the logic
 // running `helloWorld` will just print out the written logic (the function definition) without running the logic
 
@@ -146,24 +142,7 @@ const blurb = (book) => {
 
 //✅ 5. Call formatPrice on an array of prices
 
-
 //✅ 5a. Create an array
-const prices= [3, 2.3, 29.23232, 3.3333]
-//[0...4]
-
-
-
-//✅ 5b. Use a for loop to iterate over prices
-for(let i = 0; i < 4; i++){
-  console.log(`i is ${i}, prices[i] is ${prices[i]}`)
-}
-
-//✅ 5c. Use .forEach to iterate over prices
-//el => element
-//i => index
-prices.forEach((el, i) => {
-  console.log(`i is ${i}, prices[i] is ${el}`)
-})
 const prices = [3, 2.3, 29.832, 3.33333]
 
 //✅ 5b. Use a for loop to iterate over prices
@@ -218,16 +197,3 @@ const timesTwo = numbersTwo.map((el) => {
 //✅ 6. Create a version of myMap that uses a for loop to mimic .map
 //input: array, callback function
 //output: a new array
-
-
-
-
-
-// .map example
-
-const numbersTwo= [6,8,10,13]
-//[12,16,20,26]
-
-const timesTwo= numbersTwo.map ((el) => {
-  return el * 2
-})
