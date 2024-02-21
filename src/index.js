@@ -73,9 +73,10 @@ const inventory = [
 //✅ Review objects?
 
 //✅ 1. Create hello world using REGULAR functions
-function helloWorld(){
-  return
-}
+
+// function helloWorld(name){
+//   return "Hello, World " + name
+// }
 //✅ 2. For Easley's bookstore, create formatPrice(price)
 
 //✅ 3. Make an arrow function version of formatPrice
@@ -85,12 +86,24 @@ function helloWorld(){
 
 //✅ 5. Call formatPrice on an array of prices
 
+
 //✅ 5a. Create an array
+const prices= [3, 2.3, 29.23232, 3.3333]
+//[0...4]
+
+
 
 //✅ 5b. Use a for loop to iterate over prices
+for(let i = 0; i < 4; i++){
+  console.log(`i is ${i}, prices[i] is ${prices[i]}`)
+}
 
 //✅ 5c. Use .forEach to iterate over prices
-
+//el => element
+//i => index
+prices.forEach((el, i) => {
+  console.log(`i is ${i}, prices[i] is ${el}`)
+})
 //✅ 5d. Use .map to iterate over prices
 
 //✅ 5e. using .map, for each book in inventory, return blurb(book)
@@ -99,3 +112,16 @@ function helloWorld(){
 //✅ 6. Create a version of myMap that uses a for loop to mimic .map
 //input: array, callback function
 //output: a new array
+
+
+
+
+
+// .map example
+
+const numbersTwo= [6,8,10,13]
+//[12,16,20,26]
+
+const timesTwo= numbersTwo.map ((el) => {
+  return el * 2
+})
